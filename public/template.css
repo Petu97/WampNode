@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+}
+body {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  font-family: "Arial";
+  height: 95%;
+}
+p {
+  display: inline;
+}
+
+#right-container {
+  width: 30%;
+  min-height: 100%;
+  max-width: 600px;
+  border-radius: 5px;
+  position: static;
+  word-wrap: break-word;
+  padding: 10px;
+  background-color: lightgray;
+}
+#user-table-container {
+}
+#header-container {
+  min-height: 100%;
+  height: auto;
+  width: 70%;
+  float: left;
+  padding: 10px;
+  position: relative;
+  overflow: auto;
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+}
+#message-container {
+  text-align: left;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  max-height: 80%;
+  position: absolute;
+  width: inherit;
+  min-width: 90%;
+  top: 150px;
+  bottom: 50px;
+}
+
+#message-container div {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-style: ridge;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 2px;
+  margin-top: 3px;
+}
+#message-container div:nth-child(2n) {
+}
+
+#send-container {
+  position: fixed;
+  text-align: left;
+  padding-bottom: 20px;
+  bottom: 0;
+
+  max-width: 1200px;
+  height: 25px;
+  width: 60%;
+  display: flex;
+}
+
+#message-input {
+  flex-grow: 1;
+}

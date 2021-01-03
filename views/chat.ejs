@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="/template.css" />
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/client.js"></script>
+  </head>
+  <body>
+    <div id="header-container">
+      <h1>Chat</h1>
+      <p>Joined as <%= displayname %></p>
+      <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit">Log Out</button>
+      </form>
+
+      <div id="message-container" id="scroll-bar"></div>
+      <form id="send-container">
+        <input type="text" id="message-input" />
+        <button type="submit" id="send-button">Send</button>
+      </form>
+    </div>
+    <div id="right-container">
+      <h2>Users online:</h2>
+      <div id="user-table-container"></div>
+    </div>
+  </body>
+</html>
