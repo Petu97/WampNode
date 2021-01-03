@@ -1,4 +1,4 @@
-const socket = io("/"); //("http://localhost:3000" ;this is where you write your machines ip address
+const socket = io("/"); //The ip address of your server goes here
 const messageContainer = document.getElementById("message-container");
 const messageForm = document.getElementById("send-container");
 const messageInput = document.getElementById("message-input");
