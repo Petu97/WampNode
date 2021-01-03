@@ -12,7 +12,7 @@ In case where you wish to test this project for yourself, here are my configurat
 
 4. You have to set up your own sql database: here's mine:
 
-   1. CREATE DATABASE `chat`
+   1. "CREATE DATABASE `chat`"
    2. CREATE TABLE `chatmessages` (
       `UserID` int(11) NOT NULL,
       `Name` varchar(20) NOT NULL,
