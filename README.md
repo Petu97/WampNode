@@ -11,21 +11,20 @@ If you wish to test this project for yourself, here are my configurations:
 2. You might have to modify `database-config` file depending on the settings you're using for database.
 
 3. You have to set up your own sql database: here's mine:
-
-   1. CREATE DATABASE `chat`
-   2. CREATE TABLE `chatmessages` (
-      `UserID` int(11) NOT NULL,
-      `Name` varchar(20) NOT NULL,
-      `Message` varchar(255) NOT NULL
-      ) DEFAULT CHARSET=latin1
-   3. CREATE TABLE `usertable` (
-      `ID` int(11) NOT NULL AUTO_INCREMENT,
-      `UserName` varchar(20) NOT NULL,
-      `UserPassword` varchar(255) NOT NULL,
-      `DisplayName` varchar(20) NOT NULL,
-      UNIQUE KEY `ID` (`ID`),
-      UNIQUE KEY `DisplayName` (`DisplayName`),
-      UNIQUE KEY `UserName` (`UserName`)
-      ) DEFAULT CHARSET=latin1
+   - CREATE DATABASE `chat`
+   - CREATE TABLE `chatmessages` (
+     `UserID` int(11) NOT NULL,
+     `Name` varchar(20) NOT NULL,
+     `Message` varchar(255) NOT NULL
+     ) DEFAULT CHARSET=latin1
+   - CREATE TABLE `usertable` (
+     `ID` int(11) NOT NULL AUTO_INCREMENT,
+     `UserName` varchar(20) NOT NULL,
+     `UserPassword` varchar(255) NOT NULL,
+     `DisplayName` varchar(20) NOT NULL,
+     UNIQUE KEY `ID` (`ID`),
+     UNIQUE KEY `DisplayName` (`DisplayName`),
+     UNIQUE KEY `UserName` (`UserName`)
+     ) DEFAULT CHARSET=latin1
 
 Now that you have things set up and running, you can test your program in your local webbrowser in address <http://localhost:8080/login>
