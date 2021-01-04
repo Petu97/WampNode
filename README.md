@@ -2,6 +2,7 @@
 
 Real time web chat application. Users can send messages which will be sent to other clients in real time. This app consists of signup, login and a single chatroom.
 I made this project because i didn't have anything better to do for summer, i also wanted to practice my skills in SQL databases as well as to learn to use Nodejs.
+
 ~~This project has been only tested in local network~~. This application was running in google cloud platform for a breif period of time. Here's a link of a video of the app in use <https://drive.google.com/file/d/1oeC5I7Nnakke-bWrsnA-FIFA5DHZh450/view?usp=sharing>. Video of app in use on google app engine <https://drive.google.com/file/d/1efKnpSuI1yDFRamCAg2LvcNsej8KSOlx/view?usp=sharing>
 
 This application uses 2 different servers: Node server for running the application and WAMP server for SQL data storage.
