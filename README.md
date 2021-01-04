@@ -11,7 +11,7 @@ If you wish to test this project for yourself, here are my configurations:
 2. You might have to modify `database-config` file depending on the settings you're using for database.
 
 3. You have to set up your own sql database: here's mine:
-   - CREATE DATABASE "`"chat"`"
+   - CREATE DATABASE `chat`
    - CREATE TABLE `chatmessages` (
      `UserID` int(11) NOT NULL,
      `Name` varchar(20) NOT NULL,
