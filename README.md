@@ -10,7 +10,7 @@ If you wish to test this project for yourself, here are my configurations:
 
 2. You might have to modify `database-config` file depending on the settings you're using for database.
 
-3. You have to set up your own sql database: here's mine:
+3. ```You have to set up your own sql database: here's mine:
    - CREATE DATABASE `chat`
    - CREATE TABLE `chatmessages` (
      `UserID` int(11) NOT NULL,
@@ -26,5 +26,8 @@ If you wish to test this project for yourself, here are my configurations:
      UNIQUE KEY `DisplayName` (`DisplayName`),
      UNIQUE KEY `UserName` (`UserName`)
      ) DEFAULT CHARSET=latin1
+   ```
 
+```
 Now that you have things set up and running, you can test your program in your local webbrowser in address <http://localhost:8080/login>
+```
